@@ -1,0 +1,10 @@
+// main.cpp
+// BandLab Real-Time Audio FX Prototype
+// WIP: Gain + Delay processing
+
+int main() {
+    // TODO: Initialize JUCE AudioApp
+    // TODO: Implement Gain
+    // TODO: Implement Delay buffer
+    return 0;
+}
