@@ -1,9 +1,18 @@
 # BandLab JUCE Audio FX
 
-This is a work-in-progress real-time audio processor built with JUCE and C++.  
-It tests basic Gain and Delay effects to explore audio buffer handling for BandLab’s Audio Core context.
+**JUCE-based Real-Time Audio Effect Processor (Gain + Delay, WIP)**
 
-## TODO
-- Implement Gain (basic volume control)
-- Implement Delay (simple echo buffer)
+This is a work-in-progress C++ project to explore real-time audio processing using the JUCE framework.
 
+**How it works:**  
+- Takes live audio input  
+- Applies Gain (volume control)  
+- Adds a simple Delay (echo) buffer  
+- Outputs the processed audio in real-time
+
+This helps me learn how audio buffers and real-time DSP work, inspired by BandLab’s Audio Core.
+
+**Next:**  
+- Add sliders for real-time control  
+- Record a short demo video  
+- Expand with more FX or a simple MIDI sequencer
