@@ -24,3 +24,10 @@ It is inspired by BandLab's creative workflow and aims to demonstrate practical 
 - JUCE Framework
 - Visual Studio
 - OBS (for recording the demo)
+
+## 🎬 Demo Video
+
+This is a real-time audio effect processor that applies Gain + Echo.
+You can watch the working demo here:
+
+👉 [Google Drive Link](https://drive.google.com/drive/folders/1nQ_S5khSvbch4M53C0iR-jqA6m2Zd8KU?usp=drive_link)
