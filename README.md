@@ -1,32 +1,26 @@
-# 🎛️ Real-Time Audio Effect Processor
+🎛️ Real-Time Audio Effect Processor (Gain + Delay)
 
-## Overview
-A simple cross-platform real-time audio processor built with C++ and JUCE.
-It applies live gain and echo effects to incoming audio input, inspired by BandLab's creative workflow and audio engine design.
+This is a real-time audio effect processor built with C++ and JUCE.
+It applies both:
+- 🎚️ **Gain control** (via slider)
+- 🎧 **Echo / delay effect** (using circular buffer)
 
-## Features
-- Real-time gain control
-- Echo/delay line effect
-- Cross-platform with JUCE
-- Simple UI with parameter sliders
+It is inspired by BandLab's creative workflow and aims to demonstrate practical audio DSP using JUCE.
 
-## Tech Stack
+---
+
+## 🔧 How It Works (Technical Overview)
+
+- A **circular buffer** stores past audio samples.
+- We calculate:
+  - `writePosition`: where new audio is stored
+  - `readPosition`: where delayed audio is read from
+- Final output = `(original + delayed * 0.5) * gain`
+
+---
+
+## 🛠️ Tech Stack
 - C++
 - JUCE Framework
 - Visual Studio
-
-## How to Build
-1. Clone this repo
-2. Open in Projucer or Visual Studio
-3. Build and run on Windows or Mac
-
-## Screenshots
-![UI Screenshot](demo/ui_screenshot.png)
-
-## My Role
-- 100% self-developed
-- Designed DSP buffer logic
-- Implemented parameter linking and delay line
-
-## Motivation
-This project demonstrates my passion for building intuitive audio tools, aligning with BandLab's mission to break creative barriers.
+- OBS (for recording the demo)
